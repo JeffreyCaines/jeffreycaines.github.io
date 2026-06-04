@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Jeffrey Caines</title>
+    <link href="./src/output.css" rel="stylesheet">
+</head>
+<body class="bg-slate-800 font-sans antialiased text-slate-900">
+    <!-- Navigation -->
+    <nav class="fixed top-0 z-50 w-full border-b backdrop-blur border-slate-700 bg-slate-900/80">
+        <div class="mx-auto flex max-w-7xl items-center justify-between p-4">
+            <a href="/" class="text-xl font-bold text-indigo-400">Jeffrey Caines</a>
+            <button type="button" id="mobile-menu-toggle" class="inline-flex items-center justify-center rounded-md w-10 h-10 p-2 text-slate-400 hover:bg-slate-800 md:hidden">
+                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" aria-label="Open Mobile Navigation Menu"></path></svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
+                <ul class="font-medium flex flex-col p-4 border rounded-lg shadow-sm  border-slate-700 md:p-0 md:flex-row md:mr-16 md:items-center md:border-none md:shadow-none">
+                    <li><a href="/"         class="block py-2 pl-2 rounded mx-4 text-white hover:bg-slate-800 hover:text-indigo-500">Home</a></li>
+                    <li><a href="/projects" class="block py-2 pl-2 rounded mx-4 text-white hover:bg-slate-800 hover:text-indigo-500">Projects</a></li>
+                    <li><a href="/about"    class="block py-2 pl-2 rounded mx-4 text-white hover:bg-slate-800 hover:text-indigo-500">About</a></li>
+                    <!-- <li><a href="/resume"   class="block py-2 pl-2 rounded mx-4 text-white hover:bg-slate-800 hover:text-indigo-500">Resume</a></li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden pt-32 pb-16 md:pt-40 md:pb-24 bg-gradient-to-b from-slate-900 to-slate-800">
+        <div class="absolute inset-0 bg-hero-pattern opacity-30"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl font-extrabold tracking-tight md:text-5xl lg:text-6xl text-white mb-6">About Me</h1>
+            <p class="max-w-2xl mx-auto text-xl text-slate-300 mb-8">I'm always up to have a chat about anything tech related and love learning more about how technologies work.</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="py-16 bg-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Introduction Section -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold mb-8 text-indigo-400">Who I Am</h2>
+                <p class="text-lg leading-relaxed text-slate-300">
+                    Hello! I'm Jeffrey, a student in my 3rd semester of the Software Development (Co-op) program at College of the North Atlantic (CNA).
+                </p>
+                <p class="text-lg leading-relaxed text-slate-300 mt-4">
+                    Straight out of highschool I started and subsequently graduated the Computing Systems Engineering Technology (Co-op) program at CNA where I learned about fundamental engineering concepts, electrical circuit analysis and construction, soldering, computer networking, game development, and software development.
+                    <br>
+                    <br>Playing video games from a young age and getting access to a PC early on led me down the path of becoming interested in all things tech.
+                    <br>That interest naturally taught me how to fix many issues and as a result I've always been the friend/family member that others go to for help with tech.
+                    <br>I've been learning a plethora of tech and science related info ever since I had access to my first PC.
+                    <br>Currently I self host a number of Minecraft servers for friends on a Linux system I have running Fedora using GNU Screen.
+                    <br>The vast majority of my interaction with the server PC is through SSH which has made me fairly comfortable navigating a system using the CLI.
+                    <br>My plan is to swap the server start scripts to tmux, migrate each server into their own Docker container, and set up a management panel for all of them.
+                    <br>
+                    <br>I spent 8 years rowing at the St. John's Rowing Club and was on the Newfoundland & Labrador national team (Team NL).
+                    <br>During my time rowing I had the opportunity to travel to a number of rowing clubs outside NL and compete in their regattas:
+                </p>
+                    <table class="text-slate-300" style="white-space: pre;">
+                        <tr><td>    •  </td><td>North Star Rowing Club      </td><td>Dartmouth - Nova Scotia (x3)</td></tr>
+                        <tr><td>    •  </td><td>The Olympic Basin</td><td>Montréal - Québec</td></tr>
+                        <tr><td>    •  </td><td>Henley Island</td><td>St. Catherines - Ontario</td></tr>
+                        <tr><td>    •  </td><td>Buffalo Yacht Club</td><td>Buffalo - New York</td></tr>
+                        <tr><td>    •  </td><td>Kenora Rowing Club</td><td>Kenora - Ontario (2017 Winnipeg Canada Games)</td></tr>
+                    </table>
+                <p class="text-lg leading-relaxed text-slate-300 mt-4">
+                    The training required to prepare for the Canada Games helped me build discipline. In the months leading up to the games we were doing 12 practices a week split between rowing and going to the gym.
+                </p>
+            </div>
+
+            <!-- Interests Grid -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold mb-8 text-indigo-400">My Interests</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Interest 1 -->
+                    <article class="text-center p-6  rounded-xl shadow-sm hover:shadow-md transition-shadow bg-slate-800">
+                        <div class="mb-4 w-16 h-16 mx-auto flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-code-slash text-indigo-400 w-12 h-12" viewBox="0 0 16 16">
+                                <path d="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1z"/>
+                                <path d="M3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .62.39c.655-.079 1.35-.117 2.043-.117.72 0 1.443.041 2.12.126a.5.5 0 0 1 .622-.399l1.932.518a.5.5 0 0 1 .306.729q.211.136.373.297c.408.408.78 1.05 1.095 1.772.32.733.599 1.591.805 2.466s.34 1.78.364 2.606c.024.816-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773-.245-.232-.496-.526-.739-.808-.126-.148-.25-.292-.368-.423-.728-.804-1.597-1.527-3.224-1.527s-2.496.723-3.224 1.527c-.119.131-.242.275-.368.423-.243.282-.494.575-.739.808-.398.38-.877.706-1.513.773a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772a2.3 2.3 0 0 1 .433-.335l-.028-.079zm2.036.412c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a14 14 0 0 0-.748 2.295 12.4 12.4 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.504C4.861 9.969 5.978 9.027 8 9.027s3.139.942 3.965 1.855c.164.181.307.348.44.504.214.251.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.4 12.4 0 0 0-.339-2.406 14 14 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27s-2.063.091-2.913.27"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-white">Gaming</h3>
+                        <p class="text-slate-400">I'm a fan of Roguelikes, FPS games, RPGs, and co-op games where everyone has a laugh.</p>
+                    </article>
+
+                    <!-- Interest 2 -->
+                    <article class="text-center p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow bg-slate-800">
+                        <div class="mb-4 w-16 h-16 mx-auto flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-code-slash text-emerald-400 w-12 h-12" viewBox="0 0 16 16">
+                                <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-white">Software Development</h3>
+                        <p class="text-slate-400">I enjoy the process of solving challenging problems and creating software solutions.</p>
+                    </article>
+
+                    <!-- Interest 3 -->
+                    <article class="text-center p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow bg-slate-800">
+                        <div class="mb-4 w-16 h-16 mx-auto flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-code-slash text-purple-400 w-12 h-12" viewBox="0 0 16 16">
+                                <path d="M5 0a.5.5 0 0 1 .5.5V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2A2.5 2.5 0 0 1 14 4.5h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14a2.5 2.5 0 0 1-2.5 2.5v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14A2.5 2.5 0 0 1 2 11.5H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2A2.5 2.5 0 0 1 4.5 2V.5A.5.5 0 0 1 5 0m-.5 3A1.5 1.5 0 0 0 3 4.5v7A1.5 1.5 0 0 0 4.5 13h7a1.5 1.5 0 0 0 1.5-1.5v-7A1.5 1.5 0 0 0 11.5 3zM5 6.5A1.5 1.5 0 0 1 6.5 5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5zM6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-white">Technology</h3>
+                        <p class= "text-slate-400">I love learning about anything and everything tech, especially the intersection with science.</p>
+                    </article>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-slate-400 text-sm">© 2026 Jeffrey Caines. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://github.com/JeffreyCaines" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <img class="w-10 h-10" src="assets/GitHub_Invertocat_White_Clearspace.svg"></img>
+                    </a>
+                    <a href="https://linkedin.com/in/jcaines7" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <img class="w-10 h-10" src="assets/InBug-White.png"></img>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="main.js" defer></script>
+</body>
+</html>

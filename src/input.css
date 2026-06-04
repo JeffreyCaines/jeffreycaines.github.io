@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+    --color-python-color: oklch(53.54% 0.1022 246.5);
+    --color-javascript-color: oklch(89.61% 0.1527 102.08);
+    --color-html-color: oklch(62.21% 0.1938 34.85);
+    --color-css-color: oklch(44.03% 0.1603 303.37);
+    --color-java-color: oklch(60.4% 0.1232 69.41);
+    --color-c-color: oklch(44.95% 0 0);
+    --color-csharp-color: oklch(53.9814% 0.179279 141.4299);
+    --color-cpp: oklch(66.13% 0.2057 6.9);
+    --color-objectivec-color: oklch(65.66% 0.1838 258.62);
+    --color-sql-color: oklch(71.46% 0.1579 67.02);
+    --color-php-color: oklch(49.23% 0.0915 272.03);
+    --color-xml-color: oklch(48.51% 0.1428 251.44);
+    --color-jinja-color: oklch(47.96% 0.1608 28.48);
+    --color-python-alt-color: contrast-color(var(--color-python-color) to white black);
+    /* --color-javascript-alt-color: contrast-color((var(--color-javascript-color)) to white black);    */
+    --color-javascript-alt-color: oklch(from var(--color-javascript-color) calc((50 - l) * 100) 0 0);
+    --color-html-alt-color: contrast-color(var(--color-html-color) to white black);
+    --color-css-alt-color: contrast-color(var(--color-css-color) to white black);
+    --color-java-alt-color: contrast-color(var(--color-java-color) to white black);
+    --color-c-alt-color: contrast-color(var(--color-c-color) to white black);
+    --color-csharp-alt-color: contrast-color(var(--color-csharp-color) to white black);
+    --color-cpp-alt-color: contrast-color(var(--color-cpp-color) to white black);
+    --color-objectivec-alt-color: contrast-color(var(--color-objectivec-color) to white black);
+    --color-sql-alt-color: contrast-color(var(--color-sql-color) to white black);
+    --color-php-alt-color: contrast-color(var(--color-php-color) to white black);
+    --color-xml-alt-color: contrast-color(var(--color-xml-color) to white black);
+    --background-image-hero-pattern: url('../assets/cubes.png');
+
+}

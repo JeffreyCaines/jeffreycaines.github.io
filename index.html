@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeffrey Caines - Developer</title>
+    <link href="./src/output.css" rel="stylesheet">
+</head>
+<body class="bg-slate-800 font-sans antialiased">
+    <!-- Navigation -->
+    <nav class="fixed top-0 z-50 w-full border-b backdrop-blur border-slate-700 bg-slate-900/80">
+        <div class="mx-auto flex max-w-7xl items-center justify-between p-4">
+            <a href="/" class="text-xl font-bold text-indigo-400">Jeffrey Caines</a>
+            <button type="button" id="mobile-menu-toggle" class="inline-flex items-center justify-center rounded-md w-10 h-10 p-2 text-slate-400 hover:bg-slate-800 md:hidden">
+                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" aria-label="Open Mobile Navigation Menu"></path></svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
+                <ul class="font-medium flex flex-col p-4 border rounded-lg shadow-sm  border-slate-700 md:p-0 md:flex-row md:mr-16 md:items-center md:border-none md:shadow-none">
+                    <li><a href="/"         class="block py-2 pl-2 rounded mx-4 text-white hover:bg-slate-800 hover:text-indigo-500">Home</a></li>
+                    <li><a href="/projects" class="block py-2 pl-2 rounded mx-4 text-white hover:bg-slate-800 hover:text-indigo-500">Projects</a></li>
+                    <li><a href="/about"    class="block py-2 pl-2 rounded mx-4 text-white hover:bg-slate-800 hover:text-indigo-500">About</a></li>
+                    <!-- <li><a href="/resume"   class="block py-2 pl-2 rounded mx-4 text-white hover:bg-slate-800 hover:text-indigo-500">Resume</a></li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden pt-32 pb-16 md:pt-40 md:pb-24 bg-gradient-to-b from-slate-900 to-slate-800">
+        <div class="absolute inset-0 bg-hero-pattern opacity-30"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl font-extrabold tracking-tight md:text-5xl lg:text-6xl text-white mb-6">Hello, I'm Jeffrey Caines</h1>
+            <p class="max-w-2xl mx-auto text-xl text-slate-300 mb-8">I'm a Software Development (Co-op) student at College of the North Atlantic who is enthusiastic to learn about advancements in technology</p>
+        </div>
+    </section>
+
+    <!-- Featured Projects Preview -->
+    <section class="py-16 bg-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-center text-3xl font-bold tracking-tight text-white mb-12">Featured Projects</h2>
+            <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <!-- Project 1 -->
+                <article class="flex flex-col rounded-lg shadow-lg overflow-hidden bg-slate-800 hover:shadow-xl transition-shadow duration-300">
+                    <div class="p-6 flex-1">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-xl font-semibold text-white">Pokemon Run & Bun<br>Encounter Sim</h3>
+                            <a href="https://github.com/JeffreyCaines/RnB-Encounter-Sim" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub">
+                                <img class="w-10 h-10" src="assets/GitHub_Invertocat_White_Clearspace.svg"></img>
+                            </a>
+                        </div>
+                        <p class="text-slate-400 mb-4">Simulate Pokemon encounters on any route in Pokemon Run & Bun.</p>
+                        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-python-color text-white">
+                            Python
+                        </span>
+                    </div>
+                </article>
+                <!-- Project 2 -->
+                <article class="flex flex-col rounded-lg shadow-lg overflow-hidden bg-slate-800 hover:shadow-xl transition-shadow duration-300">
+                    <div class="p-6 flex-1">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-xl font-semibold text-white">Browser Based<br>Two Player Chess</h3>
+                            <a href="https://github.com/Wandalea/chess" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub">
+                                <img class="w-10 h-10" src="assets/GitHub_Invertocat_White_Clearspace.svg"></img>
+                            </a>
+                        </div>
+                            <p class="text-slate-400 mb-4">Play a two player standard or blitz chess game in your web browser.</p>
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium 
+                            bg-javascript-color
+                            text-black">JavaScript</span>
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium 
+                            bg-html-color
+                            text-html-alt-color">HTML</span>
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium 
+                            bg-css-color 
+                            text-white">CSS</span>
+                        </div>
+                </article>
+                <!-- Project 3 -->
+                <article class="flex flex-col rounded-lg shadow-lg overflow-hidden bg-slate-800 hover:shadow-xl transition-shadow duration-300">
+                    <div class="p-6 flex-1">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-xl font-semibold text-white">Favourite Pokemon<br>Flask Site<br></h3>
+                            <a href="https://github.com//cp1895-flask-project" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub">
+                                <img class="w-10 h-10" src="assets/GitHub_Invertocat_White_Clearspace.svg"></img>
+                            </a>
+                        </div>
+                            <p class="text-slate-400 mb-4">Add, remove, and list favourite Pokemon on a flask webpage.</p>
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-python-color text-white">
+                                Python
+                            </span>
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-jinja-color text-white">
+                                Jinja
+                            </span>
+                        </div>
+                    </article>
+                </div>
+
+            <div class="mt-12 text-center">
+                <a href="/projects" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 bg-slate-800 text-indigo-400 hover:bg-slate-700">See All Projects</a>
+            </div>
+        </div>
+    </section>
+
+      <!-- Education Timeline -->
+    <section class="py-16 bg-slate-800">
+        <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 id="experience-count" class="text-3xl font-bold text-center text-indigo-400 mb-12">Education</h2>
+
+            <!-- Experience Item 1 -->
+            <div class="relative pb-16">
+
+                <!-- Content container -->
+                <div class="relative">
+
+
+                    <!-- Education Cards -->
+                    <div class="grid grid-cols-1 md:grid-cols-1 gap-6">
+ 
+                    <!-- Top entry: Software Development Co-op (most recent) -->
+                    <div class="">
+                        <div class="relative flex items-center justify-between px-6 py-6 bg-slate-900 border-l-4  border-indigo-500 shadow-sm">
+                            <!-- Left side: dot + content -->
+   
+                                <div class="flex flex-col">
+                                    <h3 class="text-xl font-bold text-white mb-2">
+                                        <p>Software Development<br>(Co-op)</p>
+                                    </h3>
+                                    <p class="text-sm text-indigo-400 mt-1">College of the North Atlantic</p>
+                                    <p class="text-xs text-slate-400 mt-2">2025 — Present</p>
+                                </div>
+                            <!-- Right side: empty space for symmetry -->
+                        </div>
+                    </div>
+
+                    <!-- Bottom entry: Computing Systems Engineering Technology -->
+                    <div class="">
+                        <div class="relative flex items-center justify-between px-6 py-6 bg-slate-900 border-l-4 border-indigo-500 shadow-sm">
+                            <!-- Right side: dot + content -->
+                            <div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-white mb-2">
+                                        <p>Computing Systems Engineering Technology<br>(Co-op)</p>
+                                    </h3>
+                                    <p class="text-sm text-indigo-400 mt-1">College of the North Atlantic</p>
+                                    <p class="text-xs text-slate-400 mt-2">2023 — 2025</p>
+                                </div>
+                            </div>
+                            <!-- Left side: empty space for symmetry -->
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-slate-400 text-sm">© 2026 Jeffrey Caines. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://github.com/JeffreyCaines" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <img class="w-10 h-10" src="assets/GitHub_Invertocat_White_Clearspace.svg"></img>
+                    </a>
+                    <a href="https://linkedin.com/in/jcaines7" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <img class="w-10 h-10" src="assets/InBug-White.png"></img>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="main.js" defer></script>
+</body>
+</html>
